@@ -1,0 +1,28 @@
+安装基本的编译环境
+    sudo apt-get install build-essential
+安装 OpenGL Library
+    sudo apt-get install libgl1-mesa-dev
+安装 OpenGL Utilities
+    sudo apt-get install libglu1-mesa-dev
+
+安装 cmake 如果有可以跳过
+tar zxvf cmake-3.12.2-Linux-x86_64.tar.gz
+sudo mv cmake-3.12.2-Linux-x86_64 /opt/cmake-3.12.2
+sudo ln -sf /opt/cmake-3.12.2/bin/* /usr/bin/
+
+安装glfw
+安装依赖
+sudo apt-get install libxrandr*
+sudo apt-get install libxinerama*
+sudo apt-get install libxcursor*
+sudo apt-get install libxi*
+选择:否 satellite
+sudo apt-get install doxygen*
+
+解压并进入glfw-3.3.4文件夹
+mkdir build
+cd build
+sudo cmake ../
+sudo make
+sudo make install
+
